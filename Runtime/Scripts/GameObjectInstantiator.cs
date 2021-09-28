@@ -137,7 +137,7 @@ namespace GLTFast {
                  var material = gltf.GetMaterial(materialIndices[index]) ?? gltf.GetDefaultMaterial();
                  materials[index] = material;
             }
-
+            meshGo.AddComponent<BoxCollider>();
             renderer.sharedMaterials = materials;
         }
 
